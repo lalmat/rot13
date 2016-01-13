@@ -32,8 +32,8 @@ function rot13(a,m) {
       cryptLetterIndex = null;
 
   for (var i=0; i<m.length; i++) {
-    var clearLetterIndex = a.indexOf(m[i]);
-    var cryptLetterIndex = (clearLetterIndex+13) % a.length;
+    clearLetterIndex = a.indexOf(m[i]);
+    cryptLetterIndex = (clearLetterIndex+13) % a.length;
     result += a[cryptLetterIndex];
   }
   return result;
